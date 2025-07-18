@@ -1,6 +1,6 @@
-# colab_requirements.txt (Final, Pinned, Known-Good Versions)
+# colab_requirements.txt (Final, Known-Good Pinned + Git Configuration)
 
-pandas==2.1.4
+pandas
 numpy
 scikit-learn
 matplotlib
@@ -9,10 +9,13 @@ plotly
 tqdm
 
 # --- Core ML/DL Libraries for TFT ---
-# This specific set of versions is known to be stable and compatible
-torch==2.1.0
-pytorch-lightning==2.1.4
-pytorch-forecasting==1.0.0
+# Use a known-stable v2 release of Lightning.
+# The absolute latest (2.3+) seems to conflict with the dev version of forecasting.
+pytorch-lightning==2.2.5
+torch
+
+# Install pytorch-forecasting directly from GitHub to get Python 3.11 support
+git+https://github.com/jdb78/pytorch-forecasting.git
 
 # Utilities
 pandas-ta
