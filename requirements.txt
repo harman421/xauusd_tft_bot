@@ -1,0 +1,29 @@
+# requirements.txt
+
+# --- Core Data Science & Plotting ---
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+tqdm
+
+# --- Core ML/DL Libraries for TFT ---
+# Note: We specify 'torch' not 'pytorch'.
+# torchvision and torchaudio are standard companions.
+torch
+torchvision
+torchaudio
+pytorch-lightning
+pytorch-forecasting
+
+# --- MetaTrader 5 API ---
+MetaTrader5
+
+# --- Utilities ---
+# For safe credential management
+python-dotenv
+
+# For getting reliable historical data
+yfinance

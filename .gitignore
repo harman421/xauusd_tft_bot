@@ -1,0 +1,21 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+venv/
+.env
+
+# Data, Models, and Reports (can be large and/or sensitive)
+/data/
+/saved_models/
+/reports/
+/notebooks/.*-checkpoint.ipynb
+
+# IDE / OS specific
+.idea/
+.vscode/
+*.DS_Store
